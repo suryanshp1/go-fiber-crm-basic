@@ -1,0 +1,111 @@
+type: collection.insomnia.rest/5.0
+name: GO CRM
+meta:
+  id: wrk_d265881a3d474a2f8369266cc83f0028
+  created: 1742706135279
+  modified: 1742826719661
+collection:
+  - url: http://localhost:3000/api/v1/lead/1/
+    name: get lead
+    meta:
+      id: req_d78251ec7bd54e84ab81ae35ad257d92
+      created: 1742706295318
+      modified: 1742827127820
+      isPrivate: false
+      sortKey: -1741465793758
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/api/v1/leads/
+    name: get leads
+    meta:
+      id: req_3a955321ffa9455e81efb4e6443ca8e2
+      created: 1742826730881
+      modified: 1742827149617
+      isPrivate: false
+      sortKey: -1740845619695.5
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/api/v1/lead/
+    name: add lead
+    meta:
+      id: req_21f11650d97e4e808b6a1d852b590f85
+      created: 1742826765102
+      modified: 1742827109441
+      isPrivate: false
+      sortKey: -1740535532664.25
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "Bob Wilson",
+          "company": "Cloud Solutions",
+          "email": "bob@cloudsolutions.net",
+          "phone": 1555123456
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/api/v1/lead/1/
+    name: delete lead
+    meta:
+      id: req_6f2a587103314670a66ea474eea95677
+      created: 1742826775055
+      modified: 1742827214768
+      isPrivate: false
+      sortKey: -1740380489148.625
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_a64c86412f3070ad81f9e197643fbf06145263f1
+    created: 1742706135290
+    modified: 1742706135290
+environments:
+  name: Base Environment
+  meta:
+    id: env_a64c86412f3070ad81f9e197643fbf06145263f1
+    created: 1742706135285
+    modified: 1742706135285
+    isPrivate: false
