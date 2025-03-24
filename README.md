@@ -24,3 +24,5 @@ Run api
 ```bash
 go run main.go
 ```
+
+Attached API collection to use api
