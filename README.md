@@ -16,6 +16,7 @@ build main
 
 ```bash
 go build .\main.go
+./main.exe // to run build directly 
 ```
 
 
